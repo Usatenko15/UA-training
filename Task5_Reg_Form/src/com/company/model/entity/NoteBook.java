@@ -6,7 +6,7 @@ public class NoteBook {
 
     public NoteBook(String lastName, String userName) throws NotUniqueLoginException {
         this.lastName = lastName;
-        if(DBNoteBook.checkUserName(userName)) throw new NotUniqueLoginException("Pohui", userName);
+        if(DBNoteBook.checkUserName(userName)) throw new NotUniqueLoginException("NotUniqueLoginException(", userName);
         this.userName = userName;
     }
 }
